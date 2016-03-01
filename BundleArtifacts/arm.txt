@@ -1,0 +1,4 @@
+MainPackage=D:\Luccas\Documents\Faculdade\PI - APSE\PhoneAppPI\bin\ARM\Release\PhoneAppPI_1.1.0.4_ARM.appx
+SymbolPackage=D:\Luccas\Documents\Faculdade\PI - APSE\PhoneAppPI\AppPackages\PhoneAppPI_1.1.0.4_Test\PhoneAppPI_1.1.0.4_ARM.appxsym
+ResourcePack=D:\Luccas\Documents\Faculdade\PI - APSE\PhoneAppPI\bin\ARM\Release\PhoneAppPI_1.1.0.4_scale-100.appx
+ResourcePack=D:\Luccas\Documents\Faculdade\PI - APSE\PhoneAppPI\bin\ARM\Release\PhoneAppPI_1.1.0.4_scale-140.appx

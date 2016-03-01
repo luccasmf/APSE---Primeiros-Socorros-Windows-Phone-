@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="PhoneAppPI.PageInstrucao"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PhoneAppPI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="26.565"/>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="#FFFF0202" Offset="0"/>
+                <GradientStop Color="#FFFF0202" Offset="1"/>
+                <GradientStop Color="White" Offset="0.505"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+
+        <Viewbox Margin="6,145,6,237">
+            <Grid Height="258" Width="388">
+
+
+
+
+                <Image x:Name="imageAnterior" Height="116" Margin="0,45,0,0" VerticalAlignment="Top" Source="Assets/ico_anterior.png" Tapped="imageAnterior_Tapped" HorizontalAlignment="Left" Width="116"/>
+                <Image x:Name="imageResetar" Height="116" Margin="73,142,0,0" VerticalAlignment="Top" Source="Assets/ico_resetar.png" Tapped="imageResetar_Tapped" HorizontalAlignment="Left" Width="116"/>
+                <Image x:Name="imageParar" HorizontalAlignment="Left" Height="116" Margin="199,142,0,0" VerticalAlignment="Top" Width="116" Source="Assets/ico_pausar.png" Tapped="imageParar_Tapped"/>
+                <Image x:Name="imageProxima" Height="116" Margin="272,45,0,0" VerticalAlignment="Top" Source="Assets/ico_proximo.png" Tapped="imageProxima_Tapped" HorizontalAlignment="Left" Width="116"/>
+                <Image Height="150" Margin="124,0,0,0" VerticalAlignment="Top" Source="Assets/ico_play.png" Tapped="Image_Tapped" HorizontalAlignment="Left" Width="139"/>
+                <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="100" Margin="0,-109,0,0" VerticalAlignment="Top" Width="100" MediaEnded="mediaElement_MediaEnded"/>
+
+
+
+            </Grid>
+        </Viewbox>
+
+
+
+        <Image x:Name="Img" Source="Assets/Untitled-1.png" Stretch="Fill" Tapped="Image_Tapped_1" RenderTransformOrigin="0.421,0.038" Height="116" VerticalAlignment="Top" HorizontalAlignment="Right" Width="129"/>
+        <Image x:Name="ImgOcorrencia" HorizontalAlignment="Left" Width="100" Margin="16,16,0,0" Height="100" VerticalAlignment="Top"/>
+
+        
+        <Grid Margin="6,403,10,0"/>
+
+        <Image x:Name="image" Margin="0,0,0,10" Source="Assets/Layout-1_02.png" Height="auto" VerticalAlignment="Bottom"/>
+        <ScrollViewer Margin="31,0,34,28" Height="180" VerticalAlignment="Bottom" 
+                >
+            <TextBlock  x:Name="textBlockInstrucao" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="auto" Width="310" FontSize="30" SelectionHighlightColor="Black" Foreground="Black"/>
+        </ScrollViewer>
+    </Grid>
+</Page>
